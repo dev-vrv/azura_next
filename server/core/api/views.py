@@ -1,9 +1,9 @@
+from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import viewsets
+from .router import router
+from .apps_params import ParamsController
 
-class ApiRoot(viewsets.ViewSet):
-    
-    def params(self, request):
-        return Response({
-            'message': 'Hello, World!'
-        })
+class AppsParamsView(APIView):
+    def get(self, request):
+        params = ParamsController(router).get_params()
+        return Response(params)

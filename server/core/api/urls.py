@@ -1,6 +1,9 @@
-from django.urls import path
-from .views import ApiRoot
-from rest_framework.routers import DefaultRouter
+from django.urls import path, include
+from django.http import HttpResponse
+from api.router import router
+from .views import AppsParamsView
 
-router = DefaultRouter()
-router.register(r'params', ApiRoot, basename='params')
+urlpatterns = [
+    path('', include(router.urls)),
+    path('params/', AppsParamsView.as_view())
+]
