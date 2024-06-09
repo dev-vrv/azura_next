@@ -1,0 +1,53 @@
+$theme-colors: (
+  "primary": rgb(131, 120, 172),
+  "secondary": rgb(67, 80, 91),
+  "tertiary": rgb(67, 86, 105),
+  "success": rgb(40, 167, 69),
+  "info": rgb(23, 162, 184),
+  "warning": rgb(255, 193, 7),
+  "danger": rgb(184, 82, 82),
+  "light": rgb(248, 249, 250),
+  "grey": rgb(209, 209, 209),
+  "dark": rgb(29, 31, 34),
+  "muted": #6c757d,
+);
+
+$primary: map-get($theme-colors, "primary");
+$secondary: map-get($theme-colors, "secondary");
+$tertiary: map-get($theme-colors, "tertiary");
+$success: map-get($theme-colors, "success");
+$info: map-get($theme-colors, "info");
+$warning: map-get($theme-colors, "warning");
+$danger: map-get($theme-colors, "danger");
+$light: map-get($theme-colors, "light");
+$grey: map-get($theme-colors, "grey");
+$dark: map-get($theme-colors, "dark");
+$none: map-get($theme-colors, "none");
+$text-muted: map-get($theme-colors, "muted");
+
+$body-bg-dark: #171b1f;
+$body-bg: #f2f2f2;
+
+
+:root {
+  --glass-rgb: 255, 255, 255;
+}
+
+html[data-bs-theme="dark"] {
+  --glass-rgb: 0, 0, 0;
+}
+$glass: (
+  'sm': rgba(var(--glass-rgb), 0.1),
+  'md': rgba(var(--glass-rgb), 0.25),
+  'lg': rgba(var(--glass-rgb), 0.5),
+  'xl': rgba(var(--glass-rgb), 0.75),
+);
+$glass-sm: map-get($glass, 'sm');
+$glass-md: map-get($glass, 'md');
+$glass-lg: map-get($glass, 'lg');
+$glass-xl: map-get($glass, 'xl');
+
+
+.bg-none {
+  background-color: $none !important;
+}

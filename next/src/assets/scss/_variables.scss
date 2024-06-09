@@ -1,0 +1,77 @@
+@import './colors';
+@import './animations';
+
+$p: (
+    xs: 0.5rem,
+    sm: 1rem,
+    md: 1.25rem,
+    lg: 1.5rem,
+    xl: 2rem
+);
+
+$m: (
+    xs: 0.5rem,
+    sm: 0.75rem,
+    md: 1.5rem,
+    lg: 2rem,
+    xl: 3rem
+);
+
+$g: (
+    xs: 0.5rem,
+    sm: 0.75rem,
+    md: 1.5rem,
+    lg: 2rem,
+    xl: 3rem
+);
+
+$fs: (
+    xs: 0.8rem,
+    sm: 1rem,
+    md: 1.25rem,
+    lg: 1.5rem,
+    xl: 2rem
+);
+
+$r: (
+    xs: 0.25rem,
+    sm: 0.5rem,
+    md: 1rem,
+    lg: 1.5rem,
+    xl: 3rem
+);
+
+
+$p-xs: map-get($p, xs);
+$p-sm: map-get($p, sm);
+$p-md: map-get($p, md);
+$p-lg: map-get($p, lg);
+$p-xl: map-get($p, xl);
+
+$m-xs: map-get($m, xs);
+$m-sm: map-get($m, sm);
+$m-md: map-get($m, md);
+$m-lg: map-get($m, lg);
+$m-xl: map-get($m, xl);
+
+$g-xs: map-get($g, xs);
+$g-sm: map-get($g, sm);
+$g-md: map-get($g, md);
+$g-lg: map-get($g, lg);
+$g-xl: map-get($g, xl);
+
+$fs-xs: map-get($fs, xs);
+$fs-sm: map-get($fs, sm);
+$fs-md: map-get($fs, md);
+$fs-lg: map-get($fs, lg);
+$fs-xl: map-get($fs, xl);
+
+$r-xs: map-get($r, xs);
+$r-sm: map-get($r, sm);
+$r-md: map-get($r, md);
+$r-lg: map-get($r, lg);
+$r-xl: map-get($r, xl);
+
+
+
+$header-height: 4rem;

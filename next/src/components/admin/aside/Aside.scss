@@ -1,0 +1,16 @@
+@import '@/assets/scss/_variables';
+
+.aside {
+    &__link {
+        color: var(--bs-btn-color);
+        text-decoration: none;
+        display: block;
+        transition: color 0.2s;
+        &:hover {
+            color: $primary;
+        }
+        &.active {
+            color: $primary;
+        }
+    }
+}

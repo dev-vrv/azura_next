@@ -1,0 +1,15 @@
+@import '@/assets/scss/_variables';
+
+.section {
+    width: 100%;
+    height: 100% !important;
+    max-height: 100%;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background-color: $glass-md;
+    padding: $p-sm;
+    border-radius: $r-md;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.2s ease-in-out;
+    @extend .shadow;
+}

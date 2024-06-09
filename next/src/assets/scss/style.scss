@@ -1,0 +1,77 @@
+@import './variables';
+@import './animations';
+@import './null';
+@import './ui/section';
+@import './ui/_ui';
+@import '~/node_modules/bootstrap/scss/bootstrap';
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+[data-overlay-container] {
+    height: 100%;
+}
+
+html[data-bs-theme="dark"]>body {
+    background-image: url("../img/bg-plant.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html[data-bs-theme="light"]>body {
+    background-image: url("../img/bg-plant.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $glass-md;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: $glass-md;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+.main {
+    height: calc(100% - #{$header-height}) !important;
+    max-height: calc(100% - #{$header-height}) !important;
+    padding: $p-md;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.h-fit {
+    height: fit-content !important;
+}
+
+.i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

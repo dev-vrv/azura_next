@@ -1,0 +1,54 @@
+@import '@/assets/scss/_variables';
+
+th {
+    text-transform: capitalize;
+}
+td, th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+// thead {
+//     & th:last-child {
+//         border-radius: 0 $r-sm 0 0;
+//     }
+//     & th:first-child {
+//         border-radius: $r-sm 0 0 0;
+//     }
+// }
+
+.app-table {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    
+    &__table-header {
+        height: fit-content;
+    }
+
+    &__table-content {
+        overflow-y: scroll;
+        padding-right: $p-xs;
+        flex: 1;
+
+        & thead {
+            position: sticky;
+            & th {
+                text-wrap: nowrap;
+            }
+        }
+
+        & tbody {
+            & tr {
+                &:nth-child(even) {
+                    background-color: $grey !important;
+                }
+                &:hover {
+                    background-color: $body-bg-dark;
+                }
+            }
+        }
+    }
+}
